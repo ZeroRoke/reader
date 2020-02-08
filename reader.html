@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reader.css">
+</head>
+<style>
+
+</style>
+
+<body>
+    <header></header>
+    <nav style="display: none;">
+        <div id="icon_back"></div>
+        <div id="title_back">返回书架</div>
+    </nav>
+    <div class='user-touch'></div>
+    <!-- 文章主体 -->
+    <!--文章标题-->
+    <div id="wraper" style="box-sizing: border-box;">
+        <section id="container">
+        </section>
+        <div class="more-chapter">
+            <button id="prev">上一章</button>
+            <button id="next">下一章</button>
+        </div>
+    </div>
+    <!-- 目录 -->
+    <div class="chapter-list-wraper">
+        <div id="chapter-list"></div>
+    </div>
+    <!-- 字体设置 -->
+    <div class="fontSetting" style="display: none;">
+        <!-- 字体大小 -->
+        <div class="fontSize">
+            <span>字号</span>
+
+            <div class="btn">
+                <button id="btn-big">
+                    大
+                </button>
+                <button id="btn-small">
+                    小
+                </button>
+            </div>
+        </div>
+        <!-- 背景 -->
+        <div class="fontBg">
+            <span>前景</span>
+            <div class="bgColor"></div>
+            <div class="bgColor"></div>
+            <div class="bgColor"></div>
+            <div class="bgColor"></div>
+        </div>
+    </div>
+
+    <footer style="display: none;">
+        <div class="container">
+            <div class="chapter">
+                <div class="icon-chapter"></div>
+                <div class="chapter-title">目录</div>
+            </div>
+            <div class="font">
+                <div class="icon-font"></div>
+                <div class="font-title">字体</div>
+            </div>
+            <div class="night">
+                <div class="icon-night"></div>
+                <div class="night-title">夜间</div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./lib/zepto.min.js"></script>
+<script>
+    window.jQuery = $;
+</script>
+<script src="./lib/jquery.base64.js"></script>
+<script src="./lib/jquery.jsonp.js"></script>
+<script src="./js/reader.js"></script>
+<!-- <script src="./js/readerPromise.js"></script> -->
+<script>
+
+</script>
+
+</html>
